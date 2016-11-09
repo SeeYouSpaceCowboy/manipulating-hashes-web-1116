@@ -7,7 +7,13 @@ def second_challenge
   }
 
   #code your solution here!
+  new_array = Array.new
 
-  
+  groceries.each {|key, array|
+        array.each{ |value|
+          new_array.push(value)
+        }
+  }
 
+  new_array
 end
